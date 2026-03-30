@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>shadow.ico</ApplicationIcon>
+    <AssemblyName>ShadowExplorer</AssemblyName>
+    <Version>1.0.0</Version>
+    <Description>Browse and restore previous versions of files from Volume Shadow Copies</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="10.0.5" />
+  </ItemGroup>
+
+</Project>

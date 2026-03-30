@@ -1,0 +1,26 @@
+<Application x:Class="ShadowExplorer.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:converters="clr-namespace:ShadowExplorer.Converters"
+             StartupUri="MainWindow.xaml"
+             xmlns:local="clr-namespace:ShadowExplorer">
+    <Application.Resources>
+        <converters:BoolToDeletedBrushConverter x:Key="DeletedBrush"/>
+        <converters:BoolToFontStyleConverter x:Key="ExistsFontStyle"/>
+        <converters:BoolToDeletedForegroundConverter x:Key="DeletedForeground"/>
+        <converters:InverseBoolToVisibilityConverter x:Key="InverseBoolVis"/>
+        <converters:BoolToVisibilityConverter x:Key="BoolVis"/>
+
+        <!-- Dark theme colors -->
+        <SolidColorBrush x:Key="BgPrimary" Color="#1e1e2e"/>
+        <SolidColorBrush x:Key="BgSecondary" Color="#282840"/>
+        <SolidColorBrush x:Key="BgTertiary" Color="#313150"/>
+        <SolidColorBrush x:Key="FgPrimary" Color="#e0e0e0"/>
+        <SolidColorBrush x:Key="FgSecondary" Color="#a0a0b0"/>
+        <SolidColorBrush x:Key="AccentBlue" Color="#6c9efc"/>
+        <SolidColorBrush x:Key="AccentGreen" Color="#7ccd7c"/>
+        <SolidColorBrush x:Key="AccentRed" Color="#e06060"/>
+        <SolidColorBrush x:Key="AccentYellow" Color="#d4aa40"/>
+        <SolidColorBrush x:Key="BorderBrush" Color="#404060"/>
+    </Application.Resources>
+</Application>
